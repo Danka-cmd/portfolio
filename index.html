@@ -110,10 +110,11 @@
         <p class="muted" data-i18n="projects.subtitle">Examples that mirror the kind of work I do.</p>
         <div class="projects">
           <article class="card project">
+            <img src="https://repository-images.githubusercontent.com/295445044/6510d680-01db-11eb-9670-4c0dbfae3caf" alt="Pathfinding visualization on a grid" loading="lazy" />
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="Pathfinding visualization on a grid" loading="lazy" />
             <div class="title" data-i18n="p1.title">Pathfinding Visualizer (C++/SDL)</div>
             <div class="meta" data-i18n="p1.meta">Algorithms • Performance • Desktop tool</div>
-            <p data-i18n="p1.desc">Interactive app to compare A*, Dijkstra, and BFS on large grids. Custom priority queue tuning cut allocations and boosted performance.</p>
+            <p data-i18n="p1.desc">I built an interactive application designed to compare the behavior of three classic pathfinding algorithms: A*, Dijkstra’s algorithm, and Breadth-First Search (BFS) on large grid maps. The app provides a clear visual representation of how each algorithm explores the search space and finds the optimal path, allowing users to see differences in efficiency and strategy in real time. To achieve smooth performance even on large grids, I implemented a custom priority queue that significantly reduces memory allocations and improves execution speed. This optimization makes the visualization highly responsive, letting users experiment with various scenarios without noticeable slowdowns.</p>
             <ul class="muted">
               <li data-i18n="p1.b1">~<strong>3.4×</strong> faster than baseline with arena allocation.</li>
               <li data-i18n="p1.b2">Visual step‑through, pause/resume, heatmaps for visited nodes.</li>
@@ -204,7 +205,7 @@
       <div class="container grid" style="grid-template-columns:1fr 1fr; gap:18px">
         <div class="card">
           <h2 data-i18n="about.title">About</h2>
-          <p class="muted" id="aboutText">I’m <strong>Andreiev Danylo</strong> (Андреев Даниил), studying at STU FIIT in Bratislava. I enjoy building small but sharp tools. My focus is correctness, readable code, and practical performance. I’m open to internships, part‑time work, or project‑based gigs.</p>
+          <p class="muted" id="aboutText">I’m <strong>Andreiev Danylo</strong>, studying at STU FIIT in Bratislava. I enjoy building small but sharp tools. My focus is correctness, readable code, and practical performance. I’m open to internships, part‑time work, or project‑based gigs.</p>
           <div style="display:flex; gap:10px; margin-top:8px">
             <a class="cta" href="#contact" data-i18n="about.cta">Get in touch</a>
             <a class="card" href="CV.pdf" download style="text-decoration:none" data-i18n="about.cv">Download CV (PDF)</a>
@@ -218,12 +219,12 @@
           <h2 data-i18n="about.timeline">Timeline</h2>
           <div class="timeline">
             <div class="t-item">
-              <strong data-i18n="timeline.t1.title">STU FIIT — Bc.</strong>
+              <strong data-i18n="timeline.t1.title">~~STU FIIT — Bc.</strong>
               <div class="muted" data-i18n="timeline.t1.meta">2024–present • Informatics & Information Technologies</div>
               <p data-i18n="timeline.t1.desc">Core CS, algorithms, OOP, and software engineering basics.</p>
             </div>
             <div class="t-item">
-              <strong data-i18n="timeline.t2.title">Freelance mini‑projects</strong>
+              <strong data-i18n="timeline.t2.title">~~Freelance mini‑projects</strong>
               <div class="muted" data-i18n="timeline.t2.meta">2023–present</div>
               <p data-i18n="timeline.t2.desc">Small utilities, website tweaks, and coursework‑adjacent tools.</p>
             </div>
@@ -278,7 +279,7 @@
         'hero.lead':'I like systems programming, algorithms, and making small tools that feel fast. Below are a few case studies to show what I can do and how I think.',
         'hero.cta.projects':'See projects','hero.cta.contact':'Contact →',
         'projects.title':'Selected Projects (case studies)', 'projects.subtitle':'Examples that mirror the kind of work I do.',
-        'p1.title':'Pathfinding Visualizer (C++/SDL)','p1.meta':'Algorithms • Performance • Desktop tool','p1.desc':'Interactive app to compare A*, Dijkstra, and BFS on large grids. Custom priority queue tuning cut allocations and boosted performance.','p1.b1':'~3.4× faster than baseline with arena allocation.','p1.b2':'Visual step‑through, pause/resume, heatmaps for visited nodes.','p1.b3':'Cross‑platform builds with CMake and GitHub Actions.',
+        'p1.title':'Pathfinding Visualizer (C++/SDL)','p1.meta':'Algorithms • Performance • Desktop tool','p1.desc':'I built an interactive application designed to compare the behavior of three classic pathfinding algorithms: A*, Dijkstra’s algorithm, and Breadth-First Search (BFS) on large grid maps. The app provides a clear visual representation of how each algorithm explores the search space and finds the optimal path, allowing users to see differences in efficiency and strategy in real time. To achieve smooth performance even on large grids, I implemented a custom priority queue that significantly reduces memory allocations and improves execution speed. This optimization makes the visualization highly responsive, letting users experiment with various scenarios without noticeable slowdowns.','p1.b1': '~3.4× faster than the baseline version thanks to the arena allocator.','p1.b2': 'Step-by-step mode, pause/resume, heatmaps of visits.','p1.b3': 'Cross-platform builds with CMake + GitHub Actions.',
         'p2.title':'Embedded Sensor Logger (C)','p2.meta':'Bare‑metal • Memory safety • Low power','p2.desc':'Lightweight firmware for periodic sensor reads with ring‑buffer storage and CRC checks. Deterministic timing and minimal RAM footprint.','p2.b1':'< 32KB flash, < 4KB RAM including buffers.','p2.b2':'Sleep scheduling cut average draw by ~58%.','p2.b3':'Safe state machine + watchdog for resilience.',
         'p3.title':'CLI Backup Utility (C++)','p3.meta':'Filesystem • Multithreading • DX','p3.desc':'Command‑line tool that mirrors folders with hashing and a resumable manifest. Thread pool balances I/O using a bounded work queue.','p3.b1':'Parallel copy verification with xxHash.','p3.b2':'Progress bar, dry‑run mode, structured logs (JSONL).','p3.b3':'~2× faster on HDD and ~1.4× on SSD vs naïve copy.',
         'p4.title':'Simple Portfolio Website','p4.meta':'Static site • Accessibility • SEO basics','p4.desc':'One‑page site with semantic HTML, good contrast, meta tags, and fast loading. Built without heavy frameworks for easy hosting.','p4.b1':'Lighthouse 95+ on Performance and Accessibility.','p4.b2':'Open Graph + structured data for rich sharing.','p4.b3':'Deployed to Netlify with a custom domain.',
@@ -286,8 +287,8 @@
         'p.common.code':'Code (coming soon)','p.common.diagram':'Diagram','p.common.readme':'Readme','p.common.demo':'Live demo',
         'skills.title':'Core Skills','skills.b1':'C • Pointers • Memory mgmt','skills.b2':'C++ • RAII • Templates','skills.b3':'STL • Ranges','skills.b4':'Data structures • Algorithms','skills.b5':'Concurrency • Threads','skills.b6':'CMake • Tooling','skills.b7':'Git • CI','skills.b8':'HTTP • REST (basic)','skills.b9':'HTML • CSS • JS','skills.b10':'Linux • Bash',
         'about.title':'About','about.body':'I’m studying at STU FIIT and I enjoy building small but sharp tools. My focus is correctness, readable code, and practical performance. I’m open to internships, part‑time work, or project‑based gigs.','about.cta':'Get in touch','about.cv':'Download CV (PDF)','about.timeline':'Timeline',
-        'timeline.t1.title':'STU FIIT — Bc.','timeline.t1.meta':'2024–present • Informatics & Information Technologies','timeline.t1.desc':'Core CS, algorithms, OOP, and software engineering basics.',
-        'timeline.t2.title':'Freelance mini‑projects','timeline.t2.meta':'2023–present','timeline.t2.desc':'Small utilities, website tweaks, and coursework‑adjacent tools.',
+        'timeline.t1.title':'~~STU FIIT — Bc.','timeline.t1.meta':'2024–present • Informatics & Information Technologies','timeline.t1.desc':'Core CS, algorithms, OOP, and software engineering basics.',
+        'timeline.t2.title':'~~Freelance mini‑projects','timeline.t2.meta':'2023–present','timeline.t2.desc':'Small utilities, website tweaks, and coursework‑adjacent tools.',
         'contact.title':'Contact','contact.lead':'Tell me about your idea—what problem are we solving and by when?','contact.name':'Name','contact.email':'Email','contact.message':'Message','contact.send':'Send message','contact.github':'GitHub','contact.linkedin':'LinkedIn',
         'footer.brand':'C/C++ Portfolio — STU FIIT','footer.privacy':'Privacy','footer.imprint':'Imprint'
       },
@@ -297,19 +298,19 @@
         'site.brand': 'Портфолио C/C++',
         'nav.projects': 'Проекты', 'nav.skills': 'Навыки', 'nav.about': 'Обо мне', 'nav.contact': 'Нанять меня',
         'hero.badge':'Студент STU FIIT',
-        'hero.h1':'Привет! Я C/C++‑программист и делаю простые, аккуратные сайты.',
+        'hero.h1':'Привет! Я C/C++ программист и делаю простые, аккуратные сайты.',
         'hero.lead':'Люблю системное программирование, алгоритмы и быстрые утилиты. Ниже несколько кейсов, показывающих подход и результаты.',
         'hero.cta.projects':'Смотреть проекты','hero.cta.contact':'Связаться →',
         'projects.title':'Выбранные проекты (кейсы)', 'projects.subtitle':'Примеры, соответствующие моему опыту.',
-        'p1.title':'Визуализатор поиска пути (C++/SDL)','p1.meta':'Алгоритмы • Производительность • Десктоп', 'p1.desc':'Интерактив для сравнения A*, Дейкстры и BFS на больших сетках. Тюнинг очереди с приоритетом сократил аллокации и ускорил работу.', 'p1.b1':'~3.4× быстрее базовой версии благодаря аренному аллокатору.', 'p1.b2':'Пошаговый режим, пауза/продолжение, тепловые карты посещений.', 'p1.b3':'Кроссплатформенные сборки на CMake + GitHub Actions.',
-        'p2.title':'Логгер датчиков (C)','p2.meta':'Бeр‑метал • Безопасная память • Низкое потребление','p2.desc':'Прошивка для периодических чтений с кольцевым буфером и CRC. Детеминированные тайминги и минимальный RAM.','p2.b1':'< 32 КБ флэш, < 4 КБ ОЗУ вместе с буферами.','p2.b2':'Режим сна снизил среднее потребление на ~58%.','p2.b3':'Надёжная стейт‑машина + watchdog.',
+        'p1.title':'Визуализатор поиска пути (C++/SDL)','p1.meta':'Алгоритмы • Производительность • Десктоп', 'p1.desc':'Я создал интерактивное приложение для наглядного сравнения работы трёх классических алгоритмов поиска пути: A*, алгоритма Дейкстры и поиска в ширину (BFS) на больших решётках. Программа позволяет в реальном времени наблюдать, как каждый алгоритм исследует пространство и находит оптимальный маршрут, а также сравнить их стратегию и эффективность. Чтобы добиться высокой производительности даже на крупных картах, я реализовал собственную очередь с приоритетами, что значительно сократило количество выделений памяти и повысило скорость работы. Благодаря этому визуализация остаётся плавной и отзывчивой, позволяя экспериментировать с различными условиями без задержек.', 'p1.b1':'~3.4× быстрее базовой версии благодаря аренному аллокатору.', 'p1.b2':'Пошаговый режим, пауза/продолжение, тепловые карты посещений.', 'p1.b3':'Кроссплатформенные сборки на CMake + GitHub Actions.',
+        'p2.title':'Логгер датчиков (C)','p2.meta':'Бeр‑метал • Безопасная память • Низкое потребление','p2.desc':'Разработана прошивка для выполнения периодических чтений данных с использованием кольцевого буфера и встроенной проверки целостности через CRC. Такая архитектура обеспечивает надёжный приём и обработку информации без риска потери пакетов, даже при высоких скоростях поступления.','p2.b1':'< 32 КБ флэш, < 4 КБ ОЗУ вместе с буферами.','p2.b2':'Режим сна снизил среднее потребление на ~58%.','p2.b3':'Надёжная стейт‑машина + watchdog.',
         'p3.title':'CLI‑утилита резервного копирования (C++)','p3.meta':'ФС • Многопоточность • DX','p3.desc':'Консольный инструмент для зеркалирования с хешированием и возобновляемым манифестом. Пул потоков балансирует I/O через ограниченную очередь.','p3.b1':'Параллельная проверка копий на xxHash.','p3.b2':'Прогресс‑бар, dry‑run, структурированные логи (JSONL).','p3.b3':'~2× быстрее на HDD и ~1.4× на SSD против наивной копии.',
         'p4.title':'Простой портфолио‑сайт','p4.meta':'Статический • Доступность • SEO‑база','p4.desc':'Одностраничник с семантическим HTML, контрастом, мета‑тегами и быстрой загрузкой. Без тяжёлых фреймворков.','p4.b1':'Lighthouse 95+ по Performance и Accessibility.','p4.b2':'Open Graph + структурированные данные для шеринга.','p4.b3':'Деплой на Netlify с доменом.',
         'p.cta.similar':'Сделать подобное','p.cta.discuss':'Обсудить встраиваемые системы','p.cta.tool':'Нужен кастомный инструмент?','p.cta.site':'Хочу такой сайт',
         'p.common.code':'Код (скоро)','p.common.diagram':'Схема','p.common.readme':'Readme','p.common.demo':'Демо',
         'skills.title':'Ключевые навыки','skills.b1':'C • Указатели • Память','skills.b2':'C++ • RAII • Шаблоны','skills.b3':'STL • Ranges','skills.b4':'Структуры данных • Алгоритмы','skills.b5':'Параллелизм • Потоки','skills.b6':'CMake • Инструменты','skills.b7':'Git • CI','skills.b8':'HTTP • REST (база)','skills.b9':'HTML • CSS • JS','skills.b10':'Linux • Bash',
         'about.title':'Обо мне','about.body':'Учусь в STU FIIT, люблю делать небольшие, но точные инструменты. Ставлю на корректность, читаемость и практичную производительность. Рассмотрю стажировку, part‑time или проект.','about.cta':'Связаться','about.cv':'Скачать CV (PDF)','about.timeline':'Хронология',
-        'timeline.t1.title':'STU FIIT — Бакалавр','timeline.t1.meta':'2024–н.в. • Информатика и IT','timeline.t1.desc':'База CS, алгоритмы, ООП, основы ИС.','timeline.t2.title':'Фриланс‑минипроекты','timeline.t2.meta':'2023–н.в.','timeline.t2.desc':'Утилиты, правки сайтов, учебные инструменты.',
+        'timeline.t1.title':'~~STU FIIT — Бакалавр','timeline.t1.meta':'2024–н.в. • Информатика и IT','timeline.t1.desc':'База CS, алгоритмы, ООП, основы ИС.','timeline.t2.title':'~~Фриланс‑минипроекты','timeline.t2.meta':'2023–н.в.','timeline.t2.desc':'Утилиты, правки сайтов, учебные инструменты.',
         'contact.title':'Контакты','contact.lead':'Расскажите о задаче — что делаем и к какому сроку?','contact.name':'Имя','contact.email':'Email','contact.message':'Сообщение','contact.send':'Отправить','contact.github':'GitHub','contact.linkedin':'LinkedIn',
         'footer.brand':'Портфолио C/C++ — STU FIIT','footer.privacy':'Конфиденциальность','footer.imprint':'Импринт'
       },
@@ -323,7 +324,7 @@
         'hero.lead':'Mám rád systémové programovanie, algoritmy a rýchle nástroje. Nižšie sú príklady, ako pracujem a čo viem doručiť.',
         'hero.cta.projects':'Pozrieť projekty','hero.cta.contact':'Kontakt →',
         'projects.title':'Vybrané projekty (case studies)','projects.subtitle':'Príklady práce, ktorú robím.',
-        'p1.title':'Vizualizácia hľadania cesty (C++/SDL)','p1.meta':'Algoritmy • Výkon • Desktop','p1.desc':'Interaktívna appka na porovnanie A*, Dijkstru a BFS na veľkých mriežkach. Úprava priority queue znížila alokácie a zrýchlila beh.','p1.b1':'~3.4× rýchlejšie vďaka arena allocátoru.','p1.b2':'Kroky, pauza/pokračovať, heatmapy navštívených uzlov.','p1.b3':'CMake a GitHub Actions pre cross‑platform buildy.',
+        'p1.title':'Vizualizácia hľadania cesty (C++/SDL)','p1.meta':'Algoritmy • Výkon • Desktop','p1.desc':'Vytvoril som interaktívnu aplikáciu na porovnanie správania troch klasických algoritmov hľadania ciesty: A*, Dijkstrovho algoritmu a prehladávania do šírky (BFS) na veľkých mriežkach. Aplikácia zreteľne ukazuje, ako jednotlivé algoritmy prehľadávajú priestor a nachádzajú optimálnu cestu, čo umožňuje užívateľom v reálnom čase sledovať rozdiely v efektivite a stratégii. Aby aplikácia zostala rýchla aj pri práci s veľkými mriežkami, implementoval som vlastnú prioritnú frontu, ktorá výrazne znížila počet alokácií pamäte a zrýchlila výpočty. Vďaka tomu je vizualizácia plynulá a citlivá na vstup, čo umožňuje pohodlné experimentovanie s rôznymi scenármi bez spomalenia.','p1.b1':'~3.4× rýchlejšie vďaka arena allocátoru.','p1.b2':'Kroky, pauza/pokračovať, heatmapy navštívených uzlov.','p1.b3':'CMake a GitHub Actions pre cross‑platform buildy.',
         'p2.title':'Záznamník senzorov (C)','p2.meta':'Bare‑metal • Pamäť • Nízka spotreba','p2.desc':'Ľahký firmware s periodickým čítaním, kruhovým bufferom a CRC kontrolami. Deterministické časovanie a minimum RAM.','p2.b1':'< 32KB flash, < 4KB RAM vrátane bufferov.','p2.b2':'Spánok znížil priemerný odber ~o 58%.','p2.b3':'Stavový automat + watchdog pre spoľahlivosť.',
         'p3.title':'CLI nástroj na zálohovanie (C++)','p3.meta':'Súborový systém • Vlákna • DX','p3.desc':'Nástroj zrkadlí priečinky s hashovaním a obnoviteľným manifestom. Thread pool vyvažuje I/O cez obmedzený rad.','p3.b1':'Paralelná verifikácia kópií (xxHash).','p3.b2':'Progress bar, dry‑run, štruktúrované logy (JSONL).','p3.b3':'~2× rýchlejšie na HDD a ~1.4× na SSD než naivná kópia.',
         'p4.title':'Jednoduchý portfólio web','p4.meta':'Statický • Prístupnosť • SEO základy','p4.desc':'Jednostránkový web so semantickým HTML, kontrastom, meta tagmi a rýchlym načítaním. Bez ťažkých frameworkov.','p4.b1':'Lighthouse 95+ v Performance a Accessibility.','p4.b2':'Open Graph + štruktúrované dáta pre zdieľanie.','p4.b3':'Nasadenie na Netlify s vlastnou doménou.',
@@ -331,8 +332,8 @@
         'p.common.code':'Kód (čoskoro)','p.common.diagram':'Schéma','p.common.readme':'Readme','p.common.demo':'Demo',
         'skills.title':'Kľúčové zručnosti','skills.b1':'C • Ukazovatele • Pamäť','skills.b2':'C++ • RAII • Šablóny','skills.b3':'STL • Ranges','skills.b4':'Dáta štruktúry • Algoritmy','skills.b5':'Súbežnosť • Vlákna','skills.b6':'CMake • Nástroje','skills.b7':'Git • CI','skills.b8':'HTTP • REST (základ)','skills.b9':'HTML • CSS • JS','skills.b10':'Linux • Bash',
         'about.title':'O mne','about.body':'Študujem na STU FIIT a baví ma tvoriť malé, ale precízne nástroje. Dbám na správnosť, čitateľnosť a praktický výkon. Som otvorený stáži, part‑time alebo projektom.','about.cta':'Ozvite sa','about.cv':'Stiahnuť CV (PDF)','about.timeline':'Časová os',
-        'timeline.t1.title':'STU FIIT — Bc.','timeline.t1.meta':'2024–teraz • Informatika a IT','timeline.t1.desc':'Základy CS, algoritmy, OOP, softvérové inžinierstvo.',
-        'timeline.t2.title':'Mini‑projekty na voľnej nohe','timeline.t2.meta':'2023–teraz','timeline.t2.desc':'Malé utilitky, úpravy webov, školské nástroje.',
+        'timeline.t1.title':'~~STU FIIT — Bc.','timeline.t1.meta':'2024–teraz • Informatika a IT','timeline.t1.desc':'Základy CS, algoritmy, OOP, softvérové inžinierstvo.',
+        'timeline.t2.title':'~~Mini‑projekty na voľnej nohe','timeline.t2.meta':'2023–teraz','timeline.t2.desc':'Malé utilitky, úpravy webov, školské nástroje.',
         'contact.title':'Kontakt','contact.lead':'Napíšte mi o nápade — čo riešime a dokedy?','contact.name':'Meno','contact.email':'Email','contact.message':'Správa','contact.send':'Odoslať','contact.github':'GitHub','contact.linkedin':'LinkedIn',
         'footer.brand':'C/C++ Portfólio — STU FIIT','footer.privacy':'Súkromie','footer.imprint':'Imprint'
       }
@@ -362,5 +363,4 @@
     applyI18n(stored);
   </script>
 </body>
-
 </html>
